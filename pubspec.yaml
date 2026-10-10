@@ -1,0 +1,39 @@
+name: the_door
+description: "The Door — a small psychological horror puzzle game."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  audioplayers: ^6.7.1
+  flutter_bloc: ^9.1.1
+  shared_preferences: ^2.5.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # assets/sounds/ — procedurally generated PLACEHOLDER sounds (.wav).
+  #   Replace any file with a final sound of the same name; see assets/README.md.
+  # assets/images/ — empty for now; every visual is drawn in code.
+  assets:
+    - assets/sounds/
+    - assets/images/
+
+  # assets/fonts/ — empty for now; the game uses the system serif font.
+  # To add a custom font, drop the .ttf into assets/fonts/ and uncomment:
+  # fonts:
+  #   - family: TheDoorSerif
+  #     fonts:
+  #       - asset: assets/fonts/YourFont-Regular.ttf
